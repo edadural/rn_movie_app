@@ -5,9 +5,11 @@ import { icons } from "@/constants/icons";
 interface Props {
   onpPress?: () => void;
   placeholder: string;
+  value: string;
+  onChangeText: (text: string) => void;
 }
 
-const SearchBar = ({ onpPress, placeholder }: Props) => {
+const SearchBar = ({ onpPress, placeholder, value, onChangeText }: Props) => {
   return (
     <View className="flex-row items-center bg-dark-200 rounded-full px-5 py-4">
       <Image
@@ -19,10 +21,10 @@ const SearchBar = ({ onpPress, placeholder }: Props) => {
       <TextInput
         onPress={onpPress}
         placeholder={placeholder}
-        value=""
-        onChangeText={() => {}}
+        value={value}
+        onChangeText={onChangeText}
         placeholderTextColor="#a8b5db"
-        className="flex-1 ml-2 text-base"
+        className="flex-1 ml-2 text-white"
       />
     </View>
   );
