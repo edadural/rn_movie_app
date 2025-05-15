@@ -1,50 +1,85 @@
-# Welcome to your Expo app 👋
+# MovieMate 🎬
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MovieMate is a mobile application that allows users to discover and explore movies with real-time search, trending analysis, and a clean UI. Built using React Native, Expo, and Appwrite, this app offers a sleek experience and leverages modern tools like TypeScript and TailwindCSS.
 
-## Get started
+## ✨ Features
 
-1. Install dependencies
+- **Real-Time Movie Data**: Instantly fetch and display movie info using the TMDB API.
+- **Trending Algorithm**: Tracks user searches to highlight the most popular movies.
+- **Explore & Discover**: Home screen with curated lists and recommendations.
+- **Search Functionality**: Find any movie with an advanced search UI.
+- **Smooth UI/UX**: Tailwind-based modern design with responsive layout.
+- **Appwrite Integration**: Backend-as-a-service for storing trending data and handling real-time updates.
 
-   ```bash
-   npm install
-   ```
+## 💪 Tech Stack
 
-2. Start the app
+**Frontend:**
 
-   ```bash
-    npx expo start
-   ```
+- React Native  
+- Expo  
+- TypeScript  
+- Tailwind CSS (NativeWind)  
 
-In the output, you'll find options to open the app in a
+**Backend:**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Appwrite  
+- TMDB API
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠️ Setup Instructions
 
-## Get a fresh project
+Follow these steps to run the project locally:
 
-When you're ready, run:
+### 1. Prerequisites
+
+Make sure the following tools are installed:
+
+- [Node.js](https://nodejs.org/en)  
+- [Git](https://git-scm.com/)  
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)  
+- Expo Go app (on your mobile device)
+
+### 2. Clone the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/edadural/rn_movie_app.git
+cd rn_movie_app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 3. Install Dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. Set Up Environment Variables
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Create a `.env` file in the root directory and add your credentials:
 
-## Join the community
+```bash
+EXPO_PUBLIC_MOVIE_API_KEY=your_tmdb_api_key
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=your_database_id
+EXPO_PUBLIC_APPWRITE_COLLECTION_ID=your_collection_id
+```
+You can obtain these values from [TMDB](https://www.themoviedb.org/) and [Appwrite]([https://www.themoviedb.org/](https://cloud.appwrite.io/console/organization-65605eb9e463140f4bf1)).
 
-Join our community of developers creating universal apps.
+### 5. Run the Project
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start
+```
+Scan the QR code with the Expo Go app to launch the app on your device.
+
+## 📺 Tutorial & Credits
+
+This project is based on the YouTube tutorial by JavaScript Mastery:
+
+- **[📹 Watch the Full Tutorial](https://www.youtube.com/watch?v=f8Z9JyB2EIE)**
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/edadural/rn_movie_app/main/assets/images/1.png" alt="Image 1" width="200"/>
+  <img src="https://raw.githubusercontent.com/edadural/rn_movie_app/main/assets/images/2.png" alt="Image 2" width="200"/>
+  <img src="https://raw.githubusercontent.com/edadural/rn_movie_app/main/assets/images/3.png" alt="Image 3" width="200"/>
+</p>
